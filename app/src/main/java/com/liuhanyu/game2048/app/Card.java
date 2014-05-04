@@ -2,7 +2,6 @@ package com.liuhanyu.game2048.app;
 
 import android.content.Context;
 import android.view.Gravity;
-import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
@@ -10,6 +9,8 @@ import android.widget.TextView;
  * Created by liuhanyu on 14-5-3.
  */
 public class Card extends FrameLayout {
+
+    public static String[] cardName = {"〇","一","二","三","四","五","六","七","八","九","十"};
 
     public Card(Context context){
         super(context);
@@ -38,7 +39,7 @@ public class Card extends FrameLayout {
         if (num <= 0){
             label.setText("");
         }else {
-            label.setText(num+"");
+            label.setText(cardName[(int)(Math.log((double) num)/Math.log((double) 2))]);
         }
     }
 
