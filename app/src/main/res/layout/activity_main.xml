@@ -31,6 +31,6 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:id="@+id/gameView">
-        </com.liuhanyu.game2048.app.GameView>
+    </com.liuhanyu.game2048.app.GameView>
 
 </LinearLayout>

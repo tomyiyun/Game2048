@@ -10,7 +10,7 @@ import android.widget.TextView;
  */
 public class Card extends FrameLayout {
 
-    public static String[] cardName = {"〇","一","二","三","四","五","六","七","八","九","十"};
+    public static String[] cardName = {"","番茄火锅","红油火锅","菌汤火锅","鸳鸯火锅","三鲜火锅","香辣河鲜","蹄花火锅","无渣火锅","牛油火锅","","","","","","",""};
 
     public Card(Context context){
         super(context);
